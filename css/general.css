@@ -23,10 +23,13 @@ Paragraph default: 1.6
 --- 02 COLORS
 
 - Primary: #e67e22
-- Tints (darker version): #cf711f
+- Tints (darker version):
+#cf711f
+#45260a
 - Shades (lighter version): 
 #fdf2e9 
 #fae5d3
+#eb984e
 - Accents:
 - Greys
 #6f6f6f (lightest grey allowed on #fdf2e9)
@@ -34,6 +37,8 @@ Paragraph default: 1.6
 #333
 
 --- 03 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075)
 
 --- 04 BORDER-RADIUS
 
@@ -145,6 +150,13 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -184,6 +196,18 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
 .link:link,
 .link:visited {
   display: inline-block;
@@ -218,6 +242,13 @@ body {
   width: 3rem;
   height: 3rem;
   color: #e67e22;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(231, 127, 35, 0.5);
 }
 
 /* HELPER/SETTINGS CLASSES */
