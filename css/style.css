@@ -70,9 +70,9 @@
   margin: 0 auto;
   padding: 0 3.2rem;
   display: grid;
-  align-items: center;
-  gap: 9.6rem;
   grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
 }
 
 .hero-description {
