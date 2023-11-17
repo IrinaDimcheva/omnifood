@@ -405,8 +405,8 @@
   content: 'Best value';
   position: absolute;
   /* display: block; */
-  top: 6%;
-  right: -18%;
+  top: 5%;
+  right: -20%;
 
   text-transform: uppercase;
   font-size: 1.4rem;
